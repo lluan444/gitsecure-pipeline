@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: Task
 metadata:
-  name: gitsecure-discovery-vpatrol
+  name: gitsecure-vpatrol-task
 spec:
   inputs:
     params:
