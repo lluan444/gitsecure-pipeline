@@ -4,8 +4,6 @@ metadata:
   name: pipeline
 spec:
   params:
-    - name: pipeline-pvc
-      description: the pipeline pvc name
     - name: apikey
       description: the ibmcloud api key
   tasks:
@@ -13,7 +11,5 @@ spec:
       taskRef:
         name: gitsecure-discovery-vpatrol
       params:
-        - name: task-pvc
-          value: $(params.pipeline-pvc)
         - name: apikey
           value: $(params.apikey)

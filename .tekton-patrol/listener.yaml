@@ -15,8 +15,6 @@ spec:
         pipelineRef:
             name: pipeline
         params:
-        - name: pipeline-pvc
-          value: pipelinerun-$(uid)-pvc
         - name: apikey
           value: $(params.apikey)
 ---
