@@ -15,7 +15,7 @@ spec:
         - /gitsecure/vpatrol
       args:
         - "-apikey"
-        -  $(inputs.params.apikey)
+        -  "$(inputs.params.apikey)"
         - "-frequency"
         - "1"
         - "-rigserviceapi"
