@@ -5,6 +5,13 @@ metadata:
 spec:
   inputs:
     params:
+      - name: task-pvc
+        description: the output pvc
+      - name: repository
+        description: the git repo
+      - name: revision
+        description: the revision
+        default: master
       - name: apikey
         description: the ibmcloud api key
   steps:

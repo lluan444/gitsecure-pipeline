@@ -6,6 +6,9 @@ spec:
   params:
     - name: repository
       description: The git repo
+    - name: revision
+      description: The git repo revision
+      default: master
     - name: apikey
       description: the ibmcloud api key
   resourcetemplates:
@@ -21,6 +24,8 @@ spec:
           value: pipelinerun-$(uid)-pvc
         - name: repository
           value: $(params.repository)
+        - name: revision
+          value: $(params.revision)
         - name: apikey
           value: $(params.apikey)
 ---
@@ -31,12 +36,12 @@ metadata:
 spec:
   params:
     - name: repository
-      value: "https://github.com/nadgowdas/gitsecure-test3"
+      value: "https://github.ibm.com/test-rig/gitsecure-pipeline"
 ---
 apiVersion: tekton.dev/v1alpha1
 kind: EventListener
 metadata:
-  name: cronjob-listener
+  name: listener
 spec:
   triggers:
     - binding:
