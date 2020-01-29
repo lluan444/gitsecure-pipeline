@@ -8,14 +8,8 @@ spec:
       description: the pipeline pvc name
     - name: repository
       description: the git repo
-    - name: revision
-      description: The git repo revision
-    - name: prnumber
-      description: The pullrequest number
     - name: apikey
       description: the ibmcloud api key
-    - name: imageurl
-      description: image url into registry
   tasks:
     - name: pipeline-gitsecure-vpatrol-task
       taskRef:
