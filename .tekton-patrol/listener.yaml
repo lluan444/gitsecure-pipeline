@@ -4,11 +4,6 @@ metadata:
   name: template
 spec:
   params:
-    - name: repository
-      description: The git repo
-    - name: revision
-      description: The git repo revision
-      default: master
     - name: apikey
       description: the ibmcloud api key
   resourcetemplates:
@@ -20,12 +15,6 @@ spec:
         pipelineRef:
             name: pipeline
         params:
-        - name: pipeline-pvc
-          value: pipelinerun-$(uid)-pvc
-        - name: repository
-          value: $(params.repository)
-        - name: revision
-          value: $(params.revision)
         - name: apikey
           value: $(params.apikey)
 ---

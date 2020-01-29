@@ -4,10 +4,6 @@ metadata:
   name: pipeline
 spec:
   params:
-    - name: pipeline-pvc
-      description: the pipeline pvc name
-    - name: repository
-      description: the git repo
     - name: apikey
       description: the ibmcloud api key
   tasks:
