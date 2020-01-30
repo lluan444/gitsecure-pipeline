@@ -29,7 +29,7 @@ spec:
         - "-dir"
         - "."
     - name: discovery
-      image: shri4u/rig:rc1
+      image: shri4u/rig:rc2
       imagePullPolicy: Always
       command:
         - /go/src/github.ibm.com/rig/rig-app
