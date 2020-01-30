@@ -37,11 +37,11 @@ This is where the private worker will get deployed and your pipeline  will actua
 ```
 NOTE: Currently, we support only Git Events as Trigger
 ```
-![Alt text](./media/Gitsecure-Definitions.png?raw=true "Definition Tab")
-![Alt text](./media/Gitsecure-Trigger.png?raw=true "Trigger Tab")
+![Alt text](./media/GitSecure-Definitions.png?raw=true "Definition Tab")
+![Alt text](./media/GitSecure-Trigger.png?raw=true "Trigger Tab")
 
 9. Under Environment Properties you need to specify a property named `apikey` and this is an IBM Cloud API key you need to provide. This key is used to retrieve the Git Token for your git repo by GitSecure tasks to perform actions like `Open an Issue`, `Comment on PR`, `Create Auto-remediation PR`.
-![Alt text](./media/Gitsecure-Properties.png?raw=true "Properties Tab")
+![Alt text](./media/GitSecure-Properties.png?raw=true "Properties Tab")
 
 10. Once pipeline is configured properly, you can go ahead and create a PR on your repository and monitor a GitSecure Pipeline getting triggered on the Toolchain.
 
