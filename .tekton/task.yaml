@@ -42,14 +42,12 @@ spec:
         -  "/workspace"
         - "-dburl"
         - "bolt://169.47.180.157:30687"
-        - "-clairapi"
-        - "http://169.47.180.148:30890"
-        - "-pysafetyapi"
-        - "http://169.47.180.157:30892"
         - "-pedigreeapi"
         - "http://169.62.50.203:9940"
         - "-rigapi"
         - "http://169.47.180.148:30950"
+        - "-secadvice"
+        - "http://169.47.180.157:30940"
       volumeMounts:
         - mountPath: /artifacts
           name: task-volume
