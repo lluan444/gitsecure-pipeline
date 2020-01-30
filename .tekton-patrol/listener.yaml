@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: TriggerTemplate
 metadata:
-  name: template
+  name: cron-template
 spec:
   params:
     - name: apikey
@@ -13,7 +13,7 @@ spec:
         name: pipelinerun-$(uid)
       spec:
         pipelineRef:
-            name: pipeline
+            name: cron-pipeline
         params:
         - name: apikey
           value: $(params.apikey)
@@ -21,7 +21,7 @@ spec:
 apiVersion: tekton.dev/v1alpha1
 kind: TriggerBinding
 metadata:
-  name: binding
+  name: cron-binding
 spec:
   params:
     - name: repository
@@ -34,6 +34,6 @@ metadata:
 spec:
   triggers:
     - binding:
-        name: binding
+        name: cron-binding
       template:
-        name: template
+        name: cron-template
