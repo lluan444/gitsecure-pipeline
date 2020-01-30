@@ -43,5 +43,7 @@ NOTE: Currently, we support only Git Events as Trigger
 9. Under Environment Properties you need to specify a property named `apikey` and this is an IBM Cloud API key you need to provide. This key is used to retrieve the Git Token for your git repo by GitSecure tasks to perform actions like `Open an Issue`, `Comment on PR`, `Create Auto-remediation PR`.
 ![Alt text](./media/GitSecure-Properties.png?raw=true "Properties Tab")
 
-10. Once pipeline is configured properly, you can go ahead and create a PR on your repository and monitor a GitSecure Pipeline getting triggered on the Toolchain.
+10. Add an environment propety called `repository` with value of the repo url of your current repo.
+
+11. Once pipeline is configured properly, you can go ahead and create a PR on your repository and monitor a GitSecure Pipeline getting triggered on the Toolchain.
 
