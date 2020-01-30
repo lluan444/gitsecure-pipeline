@@ -4,6 +4,7 @@ We are running GitSecure as a Tekton pipeline on IBM DevOps Toolchain. So, GitSe
 
 ### Provisioning DevOps Toolchain on IBM Cloud
 References:
+
 <a href ="https://www.ibm.com/cloud/blog/announcements/build-and-deliver-using-tekton-enabled-pipelines">Introduction to IBM DevOps Toolchain</a>
 
 <a href="https://cloud.ibm.com/docs/ContinuousDelivery?topic=ContinuousDelivery-tekton-pipelines&locale=se">Working with Tekton Pipelines </a>
