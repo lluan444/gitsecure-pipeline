@@ -76,7 +76,7 @@ spec:
         description: the ibmcloud api key
   steps:
     - name: remediation
-      image: shri4u/rigrec:vpatrol-test
+      image: shri4u/rigrec:rc1
       imagePullPolicy: Always
       command:
         - /go/src/github.ibm.com/rig-recommend/rig-recommend
