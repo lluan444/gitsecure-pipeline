@@ -16,8 +16,6 @@ spec:
       args:
         - "-apikey"
         -  "$(inputs.params.apikey)"
-        - "-frequency"
-        - "2"
         - "-rigserviceapi"
         - "http://169.47.180.148:30950"
         - "-saapi"
